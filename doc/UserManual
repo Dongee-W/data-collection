@@ -1,0 +1,7 @@
+Pakaging
+* activator clean assembly
+
+Execution
+* java -cp DataCollection-assembly-1.0.jar intelligence.unit.dc.console.CollectOrderTransactions
+* With Optional parameters:
+  java -cp DataCollection-assembly-1.0.jar intelligence.unit.dc.console.CollectOrderTransactions "2017-05-01 12:22:00" "2017-05-02 17:22:00"

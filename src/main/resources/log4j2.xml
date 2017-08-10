@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <Console name="Console">
+            <PatternLayout pattern="%date %level [%thread] %logger{10} [%file:%line] %msg%n"/>
+        </Console>
+        <File name="File" fileName="console_app.log">
+            <PatternLayout>
+                <Pattern>%date %level [%thread] %logger{10} [%file:%line] %msg%n</Pattern>
+            </PatternLayout>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Root level="DEBUG">
+            <AppenderRef ref="Console"/>
+        </Root>
+        <logger name="intelligence.unit.dc.console" level="INFO">
+            <AppenderRef ref="File"/>
+        </logger>
+    </Loggers>
+</Configuration>
